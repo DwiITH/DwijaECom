@@ -1,0 +1,1230 @@
+/* All Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Oswald&family=Poppins:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Anton','Poppins', sans-serif ;
+    overflow-x: hidden;
+}
+
+body .getar{
+    background-repeat: no-repeat;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/Frame\ 60\ \(1\).jpg);
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+/* Navbar */
+
+.navbare{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 22px 7%;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    z-index: 9999;
+}
+
+.navbare a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-brandi{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    margin-right: 200px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+.navbar-extras{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hamburger-menu{
+  display: none;
+}
+
+.menu a{
+    margin: 0 16px;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: #ff8a00;
+}
+
+.navbar-brandi img{
+    width: 45px;
+    height: 57px;
+}
+
+.navbar-brandi a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-extras a:hover{
+    color: #ff8a00;
+}
+
+.navbar-extras a{
+    margin: 0 17px;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav.sticky{
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  transition: ease 0.5s;
+}
+/* End Navbar */
+
+/* Carousel */
+
+content{
+    position: relative;
+    top: 300px;
+    left: 100px;
+    z-index: 999;
+}
+
+content h4{
+    font-size: 120px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    z-index: 999;
+}
+
+content p{
+    font-size: 20px;
+    color: rgba(250, 247, 247, 0.8);
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+}
+
+/* Carousel End */
+
+/* Produk Swiper */
+
+.product {
+    position: relative;
+    top: 500px;
+    margin-top: 150px;
+    overflow: hidden;
+    padding: 20px;
+    z-index: 999;
+  }
+  
+  .product-category {
+    padding: 0 10vw;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 999;
+  }
+  
+  .product-container {
+    margin-top: 100px;
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 450px;
+    margin-right: 40px;
+  }
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+  }
+  
+  .card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #eee;
+    border-radius: 5px;
+    text-align: center;
+    color: #303041;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  .card-btn i{
+    font-size: 20px;
+  }
+  
+  .product-card:hover .card-btn {
+    opacity: 1;
+  }
+  
+  .card-btn:hover {
+    background: #ff7d7d;
+    color: #fff;
+  }
+  
+  .product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+  }
+  
+  .product-brand {
+    text-transform: uppercase;
+  }
+  
+  .product-short-description {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 4vw;
+    height: 60px;
+    position: absolute;
+    top: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .pre-btn {
+    left: 0;
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+  
+  .pre-btn i,
+  .nxt-btn i {
+    opacity: 0.2;
+    font-size: 50px;
+  }
+  
+  
+
+  
+
+  /* Footer */
+
+  .footer{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+  }
+
+  footer{
+    position: relative;
+    top: 600px;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+  }
+
+  footer .konfoot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+
+ .konfoot .logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px 0;
+ }
+
+ .logo p{
+  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+ }
+
+ .konfoot .logo img{
+   width: 200px;
+  }
+
+  .text,
+  .sosmed{
+    margin: 0 100px;
+  }
+
+  .sosmed{
+    text-align: center;
+  }
+
+  .sosmed  a{
+    color: #fff;
+  }
+
+  .sosmed  a .feather{
+    width: 40px;
+    height: 35px;
+  }
+
+  /* detail */
+
+  .kontainer-produk{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 90vh;
+    z-index: 999;
+  }
+
+  .isi-produk{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
+
+  .isi-produk .allgaduk img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 7px 0;
+    z-index: 999;
+  }
+
+  .isi-produk .allgaduk{
+    width: 60px;
+    height: 200px;
+    position: relative;
+    left: 150px;
+    bottom: 100px;
+  }
+
+  .main-gambar{
+    width: 500px;
+    height: 500px;
+    background-color: #808080;
+    position: relative;
+    z-index: 999;
+  }
+
+  .main-gambar img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .desk-pilihan{
+    color: #fff;
+    position: relative;
+    right: 170px;
+    bottom: 90px;
+    z-index: 999;
+  }
+
+  .desk-pilihan .namapro{
+    position: relative;
+    font-size: 45px;
+    line-height: 80px;
+  }
+
+  .desk-pilihan .harga{
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+
+  .warna .kolor{
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .warna .choose .ireng{
+    position: relative;
+    left: -32px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid white;
+    z-index: 999;
+  }
+
+  .warna .choose .coklat{
+    position: relative;
+    right: 82px;
+    width: 50px;
+    height: 50px;
+    background-color: #a52a2a;
+    border-radius: 50%;
+    border: 2px solid white;
+    z-index: 999;
+  }
+
+  .warna .choose .abu{
+    position: relative;
+    right: 132px;
+    width: 50px;
+    height: 50px;
+    margin-right: 45px;
+    background-color: #808080;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    z-index: 999;
+  }
+
+  .warna .choose{
+    position: relative;
+    bottom: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .buton{
+    position: relative;
+    bottom: 30px;
+    width: 350px;
+    height: 50px;
+    background-color: #303041;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+
+  .buton:hover{
+    background-color: aliceblue;
+    color: black;
+  }
+
+  .subuton{
+    text-decoration: none;
+    color: #3b3b3b;
+  }
+
+  /* checkout */
+
+   /* kiri */
+   .main {
+    display: flex;
+}
+
+.mainkiri {
+    width: 50%;
+}
+
+.kiripos {
+    position: relative;
+    left: 30%;
+    width: 70%;
+    top: 100px;
+}
+
+.kiripos input {
+    outline: none;
+}
+
+.mainlogo {
+    display: flex;
+}
+
+.mainlogo p {
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+    letter-spacing: -5px;
+    word-spacing: 20px;
+    line-height: 80%;
+}
+
+.mail {
+    margin-top: 50px;
+}
+
+.txtcout {
+    font-size: 27px;
+}
+
+.country {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.inputfield {
+    margin-top: 25px;
+    width: 90%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    background: transparent;
+}
+
+.selecte {
+    outline: none;
+    width: 90%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    background: transparent;
+}
+
+
+.fname,
+.lname {
+    margin-top: 25px;
+    width: 44%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    background: transparent;
+}
+
+.lname {
+    margin-left: 1%;
+}
+
+.city,
+.state,
+.zipcode {
+    margin-top: 25px;
+    width: 29%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    background: transparent;
+}
+
+.state,
+.zipcode {
+    margin-left: 1%;
+}
+
+#cbox {
+    margin-top: 10px;
+}
+
+.ship {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.buybutton {
+    border: none;
+    width: 40%;
+    height: 50px;
+    margin-right: 10%;
+    font-size: 14.5px;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.shipping {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shipping a {
+    text-decoration: none;
+    color: black;
+}
+
+.shipping a:hover {
+    color: rgba(255, 138, 0, 1);
+}
+
+.notifcbox {
+    margin-top: 25px;
+    background-color: rgba(150, 150, 150, 0.1);
+    height: 60px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.notifcbox input[type="checkbox"] {
+    margin-left: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+.notifcbox p {
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.notifcbox p span {
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 90%;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    width: 90%;
+    height: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.terms a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
+}
+
+/* kanan */
+.mainkanan {
+    width: 50%;
+    height: 1111px;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.kananpos {
+    position: relative;
+    top: 100px;
+    left: 7%;
+    width: 60%;
+}
+
+.produkcout {
+    display: flex;
+    align-items: center;
+}
+
+.namacout {
+    width: 60%;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.namacout span {
+    font-size: 16px;
+}
+
+.hargacout {
+    text-align: right;
+    font-size: 24px;
+}
+
+.disccode {
+    margin-top: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.disccode input {
+    background: transparent;
+    margin-left: 5%;
+    width: 75%;
+    height: 80%;
+    border: none;
+    outline: none;
+}
+
+.btncode {
+    background: transparent;
+    border: none;
+    width: 20%;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.subtotalcout {
+    opacity: 90%;
+    line-height: 200%;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.subtotalcout span {
+    float: right;
+}
+
+.txtnextstep {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.subtotalline {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.USDtotal {
+    font-size: 14px;
+}
+
+.lasttotal {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+body .checkout{
+  background-image: url(img/bg1.jpg);
+}
+
+/* login & SignUp */
+
+.allcontent {
+  position: relative;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  height: 844px;
+}
+
+.loginmain {
+  width: 68%;
+  height: 844px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label1 {
+  position: absolute;
+  top: 20px;
+  left: 2px;
+  color: #3b3b3b;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all .3s;
+}
+
+.labell {
+  position: absolute;
+  top: 20px;
+  left: 2px;
+  color: #3b3b3b;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all .3s;
+}
+
+/* KIRI */
+.logcontent {
+  width: 45%;
+  height: 600px;
+}
+
+.txtlogin {
+  font-size: 46px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.greeting {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 25px;
+  color: #4c4c4c;
+}
+
+input {
+  outline: none;
+}
+
+.divemail {
+  position: relative;
+  margin-top: 25px;
+  width: 100%;
+  height: 50px;
+}
+
+.inputfield:focus~label {
+  top: -4px;
+  font-size: 12px;
+}
+
+.divpass {
+  position: relative;
+  margin-top: 25px;
+  width: 100%;
+  height: 50px;
+}
+
+.inputfield {
+  width: 100%;
+  height: 50%;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+
+.btnlogin {
+  margin-top: 50px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  background: transparent;
+  font-weight: 600;
+}
+
+.divforgotpass {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divforgotpass a {
+  color: #3b3b3b;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btnback {
+  margin-top: 30px;
+}
+
+.btnback a {
+  color: #3b3b3b;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* GARIS TENGAH */
+.linescr {
+  background: #cfcfcf;
+  width: 1px;
+  height: 600px;
+}
+
+/* KANAN */
+.regcontent {
+  width: 45%;
+  height: 600px;
+}
+
+.txtregis {
+  font-size: 46px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.greeting {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 25px;
+  color: #4c4c4c;
+}
+
+.divname {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  width: 100%;
+  height: 50px;
+}
+
+.lnamed,
+.fnamed {
+  position: relative;
+  width: 49%;
+  height: 100%;
+}
+
+.input2field {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+
+.input2field:focus~label {
+  top: -4px;
+  font-size: 12px;
+}
+
+.inputfieldregis {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+
+.inputfieldregis:focus~label {
+  top: -4px;
+  font-size: 12px;
+}
+
+.divemailregis {
+  position: relative;
+  margin-top: 25px;
+  width: 100%;
+  height: 50px;
+}
+
+.divpassregis {
+  position: relative;
+  margin-top: 25px;
+  width: 100%;
+  height: 50px;
+}
+
+.regissub {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.regissub input {
+  height: 20px;
+  width: 20px;
+}
+
+.regissub label {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.btncreateacc {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 2px;
+  background: #3b3b3b;
+  font-weight: 600;
+  color: white;
+}
+
+.txtcreateacc {
+  margin-top: 20px;
+  color: slategray;
+  font-size: 15px;
+}
+
+/* Responsive */
+
+/* Laptop */
+@media (max-width: 1366px){
+  html{
+    font-size: 75%;
+  }
+}
+
+
+/* Tablet */
+@media (max-width: 768px){
+  html{
+    font-size: 62.5%;
+  }
+
+  .navbare .menu{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbare .menu a{
+   font-size: 10px;
+  }
+
+  .navbar-brandi{
+    left: 50px;
+    font-size: 30px;
+  }
+
+  .navbar-brandi img{
+    width: 30px;
+    height: 42px;
+  }
+
+  .navbar-extras{
+    position: relative;
+    right: 50px;
+  }
+
+  .navbar-extras a{
+    font-size: 10px;
+  }
+
+  .navbar-extras .feather{
+    width: 20px;
+    height: 30px;
+  }
+
+  content h4{
+    font-size: 80px;
+  }
+
+  content{
+    left: 50px;
+  }
+
+  .text,
+  .sosmed{
+    margin: 0 35px;
+  }
+
+}
+
+
+/* Mobile Phone */
+@media (max-width: 450px){
+
+  #hamburger-menu{
+    display: inline-block;
+  }
+  
+  .navbare .menu{
+    display: none;
+  }
+
+  .navbar-extras{
+    position: relative;
+    right: 120px;
+  }
+
+  content{
+    left: 20px;
+  }
+
+  content h4{
+    font-size: 60px;
+  }
+
+  content p{
+    font-size: 10px;
+  }
+
+  .footer{
+    margin-top: 150px;
+  }
+
+  footer .konfoot{
+    right: 100px;
+  }
+
+  footer .logo{
+    flex-direction: column;
+  }
+
+  .logo p{
+    font-size: 20px;
+  }
+
+  .logo img{
+    position: relative;
+    left: 20px;
+    width: 20px;
+    height: 150px;
+  }
+  
+  .text,
+  .sosmed{
+    margin: 0 0;
+  }
+
+  /* detail */
+
+  .bgdetail{
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background-image: url(img/Frame\ 60\ \(1\).jpg);
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .kontainer-produk .allgaduk{
+    display: none;
+  }
+
+  .kontainer-produk{
+    top: 100px;
+  }
+
+
+  .main-gambar img{
+    height: 400px;
+    width: 300px;
+  }
+
+  .main-gambar{
+    height: 400px;
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 300px;
+  }
+
+  .desk-pilihan{
+    top:200px;
+    right: 300px;
+  }
+
+  .desk-pilihan .namapro{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .desk-pilihan .harga{
+    font-size: 18px;
+  }
+
+  .warna .choose .ireng{
+    width: 30px;
+    height: 30px;
+  }
+
+  .warna .choose .coklat{
+    width: 30px;
+    height: 30px;
+  }
+
+  .warna .choose .abu{
+    width: 30px;
+    height: 30px;
+  }
+
+  /* chechkout */
+
+  .main {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mainkiri{
+    width: 100%;
+    margin-right: 100px;
+  }
+
+  .kiripos{
+    left: 50px;
+  }
+
+  .mainkanan{
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  /* Login */
+  .allcontent{
+    height: 500px;
+  }
+
+  .loginmain{
+    flex-direction: column;
+  }
+
+  .logcontent{
+    width: 100%;
+  }
+ 
+  .regcontent{
+    width: 100%;
+  }
+
+  .linescr{
+    margin-top: 150px;
+  }
+}
